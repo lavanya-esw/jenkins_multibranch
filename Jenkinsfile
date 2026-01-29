@@ -6,8 +6,7 @@ pipeline{
                 script {
                     if (env.BRANCH_NAME == "main") {
                         sh '''
-                            echo "Please follow the CR process"
-                            
+                            echo "Please follow the CR process"  
                         '''
                         
                     }
