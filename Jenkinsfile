@@ -4,9 +4,7 @@ pipeline{
         stage('print env'){
             steps{
                 script{
-                    sh '''
-                        echo ${env}
-                    '''
+                    env
                 }
             }
         }
