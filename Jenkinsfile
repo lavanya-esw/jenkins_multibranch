@@ -10,6 +10,7 @@ pipeline{
                         echo "hello world" 
                         echo "hi"
                         echo "hi"
+                        echo "hi"
 
                     """
                 }
