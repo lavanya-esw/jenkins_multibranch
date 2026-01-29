@@ -9,6 +9,8 @@ pipeline{
                         echo "hello world" 
                         echo "hello world" 
                         echo "hi"
+                        echo "hi"
+
                     """
                 }
             }
