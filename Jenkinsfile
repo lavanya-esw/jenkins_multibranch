@@ -3,16 +3,14 @@ pipeline{
      stages{
         stage('print env'){
             steps{
-                script{
-                    when {
-                        expression { "env.BRANCH_NAME" == "main"}
-                        script{
-                            sh """
-                            echo "please follow the CR process"
-                            """
-                        }
+                script {
+                    if (env.BRANCH_NAME == "main") {
+                        sh 'echo "Please follow the CR process"'
                     }
-                }
+                    else {
+                        echo "Branch is not main, safe to proceed"
+                    }
+
             }
         }
      }
