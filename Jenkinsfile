@@ -7,6 +7,7 @@ pipeline{
                     sh """
                         env 
                         echo "hello world" 
+                        echo "hello world" 
                     """
                 }
             }
