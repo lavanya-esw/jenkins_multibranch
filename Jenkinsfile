@@ -10,7 +10,7 @@ pipeline{
                     else {
                         echo "Branch is not main, safe to proceed"
                     }
-
+                }
             }
         }
      }
