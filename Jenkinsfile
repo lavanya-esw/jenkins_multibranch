@@ -4,12 +4,14 @@ pipeline{
         stage('print env'){
             steps{
                 script{
-                    sh """
-                        env 
-                        echo "hello world" 
-                        echo "hello world" 
-                        echo "hi"
-                    """
+                    when {
+                        expression { "env.BRANCH_NAME" == "main"}
+                        script{
+                            sh """
+                            echo "please follow the CR process"
+                            """
+                        }
+                    }
                 }
             }
         }
