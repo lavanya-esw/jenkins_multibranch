@@ -5,7 +5,11 @@ pipeline{
             steps{
                 script {
                     if (env.BRANCH_NAME == "main") {
-                        sh 'echo "Please follow the CR process"'
+                        sh '''
+                            echo "Please follow the CR process"
+                            echo "hi"
+                        '''
+                        
                     }
                     else {
                         echo "Branch is not main, safe to proceed"
