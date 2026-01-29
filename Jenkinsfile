@@ -5,7 +5,8 @@ pipeline{
             steps{
                 script{
                     sh """
-                        env  
+                        env 
+                        echo "hello world" 
                     """
                 }
             }
